@@ -1,0 +1,17 @@
+0. 미국 기업 임원들의 내부자 거래정보를 웹스크래핑 하는 프로그램
+
+1. 웹스크래핑 하기 위해 라이브러리 설치
+- TERMINAL 입력창에  pip install requests 입력
+- TERMINAL 입력창에 pip install beautifulsoup4 입력
+- TERMINAL 입력창에 pip install lxml 입력
+
+2. 웹스크래핑 시, 사이트에 과도한 트래픽이 부과되는데 따라서 bot으로 인식하고 차단하는 경우가 있음. 따라서 사용자가 사람인것처럼 설정해줘야 함.
+- 구글에 what is my user agent 입력
+- Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/ 숫자 (KHTML, like Gecko) Chrome/ 숫자 Safari/ 숫자 ->내 컴퓨터의 ip 주소라고 보면 됨
+- 위의 형태를 복사한뒤, 파이썬 코드의 headers 라는 변수명에 내가 써놓은 user agent 값 지우고, 같은 자리에 붙여넣기 함
+
+3. 원하는 기업 종목 및 원하는 기간 입력
+-실행하면 엑셀파일 생성됨.
+
+기타
+- 시간이 지나면서 웹사이트가 업데이트가 되고, html 변수명이 바뀌다 보니 동작을 하지 않는 문제가 있음
